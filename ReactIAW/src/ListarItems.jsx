@@ -38,6 +38,7 @@ export const ListarItems3= () => {
     </ul>
   )
 }
+
 export const ListarTabla= (props) => {
     function getItems(){ return json2.map((heroe,index) => {
         if (heroe.publisher===props.tipo){

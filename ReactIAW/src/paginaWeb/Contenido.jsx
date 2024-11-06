@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, useParams, Outlet } from "react
 import Section from './Section'
 import Aside from './Aside'
 
+import ControlledCarousel from '../Carousel';
 import Tarjeta from './Cards';
 import './contenido.module.css'
 import Rutas from './Rutas'
@@ -43,10 +44,14 @@ function Contenido() {
 
 export default Contenido
 function Home() {
-  return <Tarjeta/>;
+  return (
+    <>
+      <Tarjeta />
+      <ControlledCarousel />
+    </>
+  );
 }
 
-//Sólo se verá con /about en la URL
 function About() {
   return <div>about</div>;
 }
