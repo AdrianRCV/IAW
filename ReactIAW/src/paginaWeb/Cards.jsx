@@ -5,7 +5,7 @@ import style from './cards.module.css';
 function Tarjeta() {
   return (
     <>
-      <Card style={{ width: '18rem', height: '150px'}} className={style.imgcards}>
+      <Card style={{ width: '18rem'}} className={style.imgcards}>
           <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/250px-React.svg.png" />
           <Card.Body>
           <Card.Title>React</Card.Title>

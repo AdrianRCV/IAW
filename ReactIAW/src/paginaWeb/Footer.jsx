@@ -27,4 +27,5 @@ function Footer({RRSS}) {
   )
 }
 
+
 export default Footer

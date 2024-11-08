@@ -12,23 +12,23 @@ function ControlledCarousel() {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect} style={{width:"25%"}}>
       <Carousel.Item>
-        <img width="600px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Alcazaba_de_Almer%C3%ADa.jpg/640px-Alcazaba_de_Almer%C3%ADa.jpg" alt="Alcazaba de Almería"/>
+        <img width="600px" height="460px" src="https://turismo.huercal-overa.es/wp-content/uploads/2022/01/Foto-Ayuntamiento-Huercal-Overa.jpg" alt="Ayuntamiento Huércal-Overa"/>
         <Carousel.Caption>
-          <h3>First slide label</h3>
+          <h3>Ayuntamiento Huércal-Overa</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img width="600px" src="https://turismoalmanzora.com/wp-content/uploads/imagen-de-albox.jpg" alt="Santuario del Saliente"/>
+        <img width="600px" height="460px" src="https://s3.ppllstatics.com/ideal/levante/multimedia/202002/14/media/cortadas/HO-ies-cura-valera2-kbuH-U100155323650pVG-1248x770@Ideal.jpg" alt="IES Cura Valera"/>
         <Carousel.Caption>
-          <h3>Second slide label</h3>
+          <h3>IES Cura Valera</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img width="600px" src="/alhambra.jpg" alt="Alhambra" />
+        <img width="600px" height="460px" src="https://almeria360.com/estaticos/2024/06/IES-Albujaira-1.jpeg" alt="IES Albujaira" />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>IES Albujaira</h3>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
