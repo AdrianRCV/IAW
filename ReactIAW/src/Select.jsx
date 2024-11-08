@@ -26,7 +26,7 @@ export default function HeroSelect() {
           label="Select Hero"
           onChange={handleHeroChange}
         >
-          {/* Solo renderiza las opciones si hay héroes filtrados */}
+          {/* Solo muestra las opciones si hay héroes filtrados */}
           {marvelHeroes.map((heroOption) => (
             <MenuItem key={heroOption.superhero} value={heroOption.superhero}>
               {heroOption.superhero} ({heroOption.publisher})
