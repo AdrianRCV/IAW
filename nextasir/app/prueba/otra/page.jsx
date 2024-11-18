@@ -1,7 +1,5 @@
-import React from 'react'
-
 export default function Otra() {
-  return (
-    <div>Otra</div>
-  )
+    return (
+        <h2>Detalle de OTRA</h2>
+    );
 }

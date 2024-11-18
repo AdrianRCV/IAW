@@ -1,7 +1,7 @@
-import Footer from "@/componentes/footer";
+import Footero from "@/componentes/Footer";
 
-export default function PagePrueba() {
+export default function prueba() {
     return (
-        <Footer/>
+        <Footero/>
     );
 }
