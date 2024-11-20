@@ -2,14 +2,11 @@ import Link from "next/link";
 
 export default async function Page({params}) {
     let {id}=await params;
-    if(id>100){
-        return <h2>El producto {id} no existe</h2>
-    }
-    else{
+    let {forma}=await params;
     return (<>
-        <h2>Producto {id}</h2>
+        <h2>Detalle del producto {id}</h2>
+        <h3>Producto de la forma {forma}</h3>
         <Link href="/rutaDinamica">Volver atrás</Link>
         </>
     );
-}
 }
