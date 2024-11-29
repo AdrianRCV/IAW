@@ -46,3 +46,17 @@ a {
 .imagen{
   width:500px
 }
+
+nav {
+  height: auto;
+  text-align: center;
+  background-color: aqua;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+button {
+  float: right;
+}

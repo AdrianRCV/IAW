@@ -9,7 +9,7 @@ export default function PokemonPage() {
   useEffect(() => {
     const fetchPokemon = async () => {
       try {
-        const response = await fetch('https://pokeapi.co/api/v2/pokemo');
+        const response = await fetch('https://pokeapi.co/api/v2/pokemon');
         if (!response.ok) {
           throw new Error('Error al cargar los Pokemon');
         }
