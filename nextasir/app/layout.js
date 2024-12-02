@@ -2,7 +2,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Image from "next/image";
-import { Suspense, useState } from "react";
+import { usePathname } from 'next/navigation';
+import { Suspense, use, useState } from "react";
 import Link from "next/link";
 import { getDictionary } from "@/componentes/diccionario";
 import PokemonAleatorio from "@/componentes/PokemonAleatorio";
@@ -39,6 +40,7 @@ function Cargando() {
 
 
 export default function RootLayout({ children }) {
+  const pathname = usePathname();
   let [idioma,setIdioma]=useState('en');
     let dict=getDictionary(idioma);
     
@@ -59,9 +61,13 @@ export default function RootLayout({ children }) {
             <button onClick={() => changeLanguage('en')} className="p-2 rounded-full hover:bg-gray-200"><Image src="/uk.png" alt="Inglés" width={24} height={24} /></button>
           </nav>
           <main>
-            <h1>{dict.title}</h1>
-            <h2>{dict.description}</h2>
-            <PokemonAleatorio/>
+            {pathname === '/' && (
+              <>
+                <h1>{dict.title}</h1>
+                <h2>{dict.description}</h2>
+                <PokemonAleatorio/>
+              </>
+            )}
           </main>
       </body>
     </html>
