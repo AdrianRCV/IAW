@@ -1,13 +1,13 @@
 const dictionaries = {
     en: {
-      title: 'Welcome to my multilingual page',
-      description: 'This is a simple page that can be translated into Spanish and English.',
+      title: 'Random Pokemon',
+      description: 'This is a simple page that fetches a random Pokémon between 1 and 386 from a PokeAPI.',
       home:'Home',
       esperando:'Waiting 3s'
     },
     es: {
-      title: 'Bienvenido a mi página multilingüe',
-      description: 'Esta es una página sencilla que se puede traducir al español y al inglés.',
+      title: 'Pokemon aleatorio',
+      description: 'Esta es una página sencilla que trae de una PokeAPI un pokemon aleatorio entre 1 y 386.',
       home:'Inicio',
       esperando:'Esperando 3s'
     },
