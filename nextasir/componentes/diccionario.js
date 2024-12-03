@@ -1,13 +1,13 @@
 const dictionaries = {
     en: {
-      title: 'Random Pokemon',
-      description: 'This is a simple page that fetches a random Pokémon between 1 and 386 from a PokeAPI.',
+      title: 'Random Pokémon',
+      description: 'This is a simple page that makes a call to a PokeAPI.',
       home:'Home',
       esperando:'Waiting 3s'
     },
     es: {
-      title: 'Pokemon aleatorio',
-      description: 'Esta es una página sencilla que trae de una PokeAPI un pokemon aleatorio entre 1 y 386.',
+      title: 'Pokémon aleatori',
+      description: 'Esta es una página sencilla que hace llamado a una PokeAPI.',
       home:'Inicio',
       esperando:'Esperando 3s'
     },

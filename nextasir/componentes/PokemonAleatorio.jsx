@@ -13,7 +13,7 @@ const PokemonAleatorio = () => {
             let randomIds = [];
 
             while (randomPokemons.length < 1) {
-                const randomId = Math.floor(Math.random() * 386) + 1; 
+                const randomId = Math.floor(Math.random() * 1000) + 1; 
                 if (!randomIds.includes(randomId)) {
                     randomIds.push(randomId);
                     try {
@@ -48,7 +48,7 @@ const PokemonAleatorio = () => {
                 <Card key={index} style={{ height: '350px', margin: '10px', width: '250px', border: '1px solid #ccc', borderRadius: '10px', padding: '10px' }}>
                     <h3>Número: {pokemon.numero} {pokemon.nombre}</h3>
                     <img src={pokemon.img} alt={pokemon.nombre} style={{ width: '100%', height: 'auto' }} />
-                    <p>HP: {pokemon.hp} Ataque: {pokemon.ataque} Defensa: {pokemon.defensa}</p>
+                    <p>HP:{pokemon.hp} Ataque:{pokemon.ataque} Defensa:{pokemon.defensa}</p>
                 </Card>
             ))}
         </div>
