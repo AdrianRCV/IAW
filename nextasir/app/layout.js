@@ -7,6 +7,7 @@ import { Suspense, use, useState } from "react";
 import Link from "next/link";
 import { getDictionary } from "@/componentes/diccionario";
 import PokemonAleatorio from "@/componentes/PokemonAleatorio";
+import RandomGen1 from "@/componentes/RandomGen1";
 import  "bootstrap/dist/css/bootstrap.min.css";
 import AddBootstrap from "@/AddBootstrap";
 
@@ -54,8 +55,7 @@ export default function RootLayout({ children }) {
       <AddBootstrap/>
           <nav>
             <Link href="/">{dict.home}</Link> 
-            <Link href="/pokemongen1">Generaciones</Link>  
-            <Link href="/pokemon"></Link> 
+            <Link href="/pokemongen1">Gen 1</Link>  
             <Link href="/esperando">{dict.esperando}</Link>
             <button onClick={() => changeLanguage('es')} className="p-2 rounded-full hover:bg-gray-200"><Image src="/spain.png" alt="Español" width={24} height={24} /></button>
             <button onClick={() => changeLanguage('en')} className="p-2 rounded-full hover:bg-gray-200"><Image src="/uk.png" alt="Inglés" width={24} height={24} /></button>
@@ -66,6 +66,11 @@ export default function RootLayout({ children }) {
                 <h1>{dict.title}</h1>
                 <h2>{dict.description}</h2>
                 <PokemonAleatorio/>
+              </>
+            )}
+            {pathname === '/pokemongen1' && (
+              <>
+                <RandomGen1/>
               </>
             )}
           </main>
