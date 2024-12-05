@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-//Detalle de cada provincia
 function DetalleProvincia({nombre}){
     if(nombre==="almeria"){
         return (<>
@@ -59,7 +58,6 @@ function DetalleProvincia({nombre}){
     else{
         return notFound();
     }
-    
 }
 
  function Example({nombre}) {
@@ -73,10 +71,6 @@ function DetalleProvincia({nombre}){
 
   return (
     <>
-      {/* <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
-      </Button> */}
-
       <Modal show={show} size="lg"  onHide={handleClose} animation={false}>
         <Modal.Header closeButton>
           <Modal.Title>INFORMACIÓN DE LA CIUDAD {nombre}</Modal.Title>
