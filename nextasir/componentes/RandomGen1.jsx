@@ -1,14 +1,14 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
-import Modal from '@/componentes/Modal';
+import { useRouter } from 'next/navigation';
 
 const RandomGen1 = () => {
     const [pokemons, setPokemons] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [selectedPokemon, setSelectedPokemon] = useState(null); 
-    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const router = useRouter();
 
     useEffect(() => {
         const fetchRandom1Pokemons = async () => {
@@ -44,15 +44,6 @@ const RandomGen1 = () => {
         fetchRandom1Pokemons();
     }, []);
 
-    const openModal = (pokemon) => {
-        setSelectedPokemon(pokemon);
-        setIsModalOpen(true); 
-    };
-
-    const closeModal = () => {
-        setIsModalOpen(false); 
-    };
-
     if (loading) return <div>Cargando...</div>;
     if (error) return <div>Error: {error}</div>;
 
@@ -62,12 +53,9 @@ const RandomGen1 = () => {
                 <Card key={index} style={{ height: '350px', margin: '10px', width: '250px', border: '1px solid #ccc', borderRadius: '10px', padding: '10px' }}>
                     <h3>{pokemon.nombre}</h3>
                     <img src={pokemon.img} alt={pokemon.nombre} style={{ width: '100%', height: 'auto' }} />
-                    <button onClick={() => openModal(pokemon)} style={{ marginTop: '10px', padding: '10px', cursor: 'pointer' }}>
-                        Mas información
-                    </button>
+                    <button onClick={() => router.push(`/pokemongen1/${pokemon.numero}`)}style={{ marginTop: '10px', padding: '10px', cursor: 'pointer' }}>Más información</button>
                 </Card>
             ))}
-            <Modal isOpen={isModalOpen} onClose={closeModal} pokemonData={selectedPokemon} />
         </div>
     );
 };
