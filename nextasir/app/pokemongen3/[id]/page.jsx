@@ -1,11 +1,11 @@
 'use client'
 import { use } from 'react';
-import MasInfoPokemons from '@/componentes/MasInfoPokemons';
+import MasInfoPokemons3 from '@/componentes/MasInfoPokemons3';
 
 export default function Page({ params }){
     const {id} = use(params);
 
     return (
-        <MasInfoPokemons id={id}/>
+        <MasInfoPokemons3 id={id}/>
     );
 }

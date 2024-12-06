@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { redirect } from 'next/navigation';
 
-const MasInfoPokemons = ({ id }) => {
+const MasInfoPokemons2 = ({ id }) => {
   const [pokemon, setPokemon] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -39,7 +39,7 @@ const MasInfoPokemons = ({ id }) => {
     fetchPokemon();
   }, [id]);
 
-  const handleClose = () => redirect('/pokemongen1');
+  const handleClose = () => redirect('/pokemongen2');
 
   if (loading) return <div>Cargando...</div>;
   if (error) return <div>Error: {error}</div>;
@@ -64,4 +64,4 @@ const MasInfoPokemons = ({ id }) => {
   );
 };
 
-export default MasInfoPokemons;
+export default MasInfoPokemons2;

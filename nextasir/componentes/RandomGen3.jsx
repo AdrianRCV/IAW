@@ -1,11 +1,13 @@
 'use client'
 import { useState, useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
+import { useRouter } from 'next/navigation';
 
 const RandomGen3 = () => {
     const [pokemons, setPokemons] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const router = useRouter();
 
     useEffect(() => {
         const fetchRandom3Pokemons = async () => {
@@ -45,10 +47,10 @@ const RandomGen3 = () => {
     return (
         <div className="pokemon-list" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', alignItems: 'center', textAlign: 'center' }}>
             {pokemons.map((pokemon, index) => (
-                <Card key={index} style={{ height: 'auto', margin: '10px', width: '270px', border: '1px solid #ccc', borderRadius: '10px', padding: '10px' }}>
-                    <h3>Número: {pokemon.numero} {pokemon.nombre}</h3>
+                <Card key={index} style={{ height: '350px', margin: '10px', width: '250px', border: '1px solid #ccc', borderRadius: '10px', padding: '10px' }}>
+                    <h3>{pokemon.nombre}</h3>
                     <img src={pokemon.img} alt={pokemon.nombre} style={{width: '100%', height: 'auto'}} />
-                    <p>HP: {pokemon.hp} Ataque: {pokemon.ataque} Defensa: {pokemon.defensa}</p>
+                    <button onClick={() => router.push(`/pokemongen3/${pokemon.numero}`)}style={{ marginTop: '10px', padding: '10px', cursor: 'pointer' }}>Más información</button>
                 </Card>
             ))}
         </div>

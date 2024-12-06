@@ -60,6 +60,7 @@ export default function RootLayout({ children }) {
             <Link href="/esperando">{dict.esperando}</Link>
             <button onClick={() => changeLanguage('es')} className="p-2 rounded-full hover:bg-gray-200"><Image src="/spain.png" alt="Español" width={24} height={24} /></button>
             <button onClick={() => changeLanguage('en')} className="p-2 rounded-full hover:bg-gray-200"><Image src="/uk.png" alt="Inglés" width={24} height={24} /></button>
+            <button onClick={() => changeLanguage('fr')} className="p-2 rounded-full hover:bg-gray-200"><Image src="/france.png" alt="Frances" width={24} height={24} /></button>
           </nav>
           <main>
             <h1>{dict.title}</h1>

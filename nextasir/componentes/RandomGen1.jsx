@@ -7,7 +7,6 @@ const RandomGen1 = () => {
     const [pokemons, setPokemons] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-
     const router = useRouter();
 
     useEffect(() => {
