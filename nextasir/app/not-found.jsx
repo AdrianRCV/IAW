@@ -11,12 +11,8 @@ export default function Error() {
     return (
         <>
         <div>
-            <h2>Something went wrong!</h2>
-            <a href="/"><button> Botón con Link   </button></a>
-        </div>
-        <div>
-            <h2>Something went wrong!</h2>
-            <button   onClick={goToHome}> Botón con useRouter </button>
+            <h2>Página no encontrada</h2>
+            <Link href="/InicioInstituto"><button>Regresar</button></Link>
         </div>
         </>
     );
