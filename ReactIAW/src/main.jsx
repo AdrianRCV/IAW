@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import Web from './paginaWeb/Web'
+import Web from './Actividad1/Web'
 
 
 

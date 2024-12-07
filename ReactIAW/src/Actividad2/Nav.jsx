@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './nav.module.css'
+import style from '../paginaWeb/nav.module.css'
 import { IoIosContact } from "react-icons/io";
 import { FaHome } from "react-icons/fa";
 import { Link } from 'react-router-dom';

@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import RedesSociales from './RedesSociales';
 import Checkboxes from './Checkbox';
 import BasicSelect from './Select';
-/*Importar iconos */
 import { DiAndroid } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
 import AccessibleIcon from '@mui/icons-material/Accessible';
