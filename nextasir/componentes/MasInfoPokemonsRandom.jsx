@@ -40,8 +40,10 @@ const MasInfoPokemonsRandom = ({ id }) => {
   }, [id]);
 
   const handleClose = () => redirect('/');
+  const handleSiguiente = () => redirect('')  /*Aca deberia de insertar para que rediriga a (iddelpokemonenlaruta)+1 */
+  const handleAnterior = () => redirect('')  /*Aca deberia de insertar para que rediriga a (iddelpokemonenlaruta)-1 */ 
 
-  if (loading) return <div>Cargando...</div>;
+  if (loading) return <img src='/Loading_2.gif'></img>;
   if (error) return <div>Error: {error}</div>;
 
   return (
@@ -58,10 +60,19 @@ const MasInfoPokemonsRandom = ({ id }) => {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>Cerrar</Button>
+          <Button variant="secondary" onClick={handleSiguiente}>Siguiente</Button>
+          <Button variant="secondary" onClick={handleAnterior}>Anterior</Button>
         </Modal.Footer>
       </Modal>
     </>
   );
+};
+
+export const metadata = {
+  title: "Detalle del Pokemon",
+  icons: {
+    icon: '/iconopoke.png'
+  }
 };
 
 export default MasInfoPokemonsRandom;
