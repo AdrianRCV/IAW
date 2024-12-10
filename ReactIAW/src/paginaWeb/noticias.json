@@ -1,0 +1,17 @@
+[
+    {
+        "imagen":"https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/andalucia/alhambra-granada-20044065-istock.jpg_1014274486.jpg",
+        "titulo":"GRANADA",
+        "texto":"Ciudad universitaria y de encanto nazari de Andalucía"
+    },
+    {
+        "imagen":"https://i.ytimg.com/vi/t7iYc0yOUc8/maxresdefault.jpg",
+        "titulo":"IES CURA VALERA",
+        "texto":"Instituo de referencia de formación profesional en Informática de Andalucía"
+    },
+    {
+        "imagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjTjeNHyqBHdImqGDutRVJ02tBUSDXaZfgtg&s",
+        "titulo":"POKE API",
+        "texto":""
+    }
+]

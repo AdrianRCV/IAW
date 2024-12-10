@@ -7,6 +7,7 @@ import Aside from './Aside'
 import ControlledCarousel from '../Carousel';
 import Tarjeta from './Cards';
 import './contenido.module.css'
+import  JsonDataLoader from './CardsDefensa'
 
 function Contenido() {
   return (
@@ -30,6 +31,7 @@ function Contenido() {
         </Route>
         { <Route path="/producto/:numero" element={<Producto/>} /> }
         <Route path="/about" element={<About/>} />
+        <Route path="/defensa" element={<Defensa/>} />
         <Route path="*" element={<NotFound/>} />
         </Routes>  
         </section>
@@ -75,6 +77,13 @@ function Producto() {
     }
     return <h2>PRODUCTO ELEGIDO: {params.numero}</h2>;
 }
+
+function Defensa() {
+  return <>
+      <JsonDataLoader/>
+  </>
+}
+
 function NotFound() {
   return <h2>ESTA RUTA NO ES VÁLIDA</h2>;
 }
