@@ -45,8 +45,6 @@ function Web() {
 
       <h3>Utilizando iconos para redes sociales</h3>
       <RedesSociales RRSS={[{nombre:"Facebook",url:"hola"},{nombre:"Instagram",url:"adios"},{nombre:"Linkedin",url:"otra"},{nombre:"Google",url:"google"}]}/>
-
- 
     </div>
   )
 }

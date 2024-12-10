@@ -1,13 +1,12 @@
 import React from 'react'
 import Nav from './Nav'
 import { BrowserRouter as Router, Route, Routes, useParams, Outlet } from "react-router-dom";
-import Section from './Section'
+import Section from './Section'   /*da estructura al contenido */
 import Aside from './Aside'
 
 import ControlledCarousel from '../Carousel';
 import Tarjeta from './Cards';
 import './contenido.module.css'
-import Rutas from './Rutas'
 
 function Contenido() {
   return (
@@ -22,7 +21,6 @@ function Contenido() {
           <Route path="/about" element={<About/>} />
         </Routes>
       </aside>
-        {/* <Section/> */}
         <section>
         <Routes>
         <Route exact path="/" element={<Home/>} />

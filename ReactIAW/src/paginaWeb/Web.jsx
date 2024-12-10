@@ -8,7 +8,7 @@ function Web() {
     <>
     <Header/>
     <Contenido/>
-    <Footer RRSS={[{nombre:"Facebook",url:"hola"},{nombre:"Instagram",url:"adios"},{nombre:"Linkedin",url:"otra"},{nombre:"Google",url:"google"}]}/>
+    <Footer RRSS={[{nombre:"Facebook",url:"https://www.facebook.com"},{nombre:"Instagram",url:"https://www.instagram.com"},{nombre:"Linkedin",url:"https://www.linkedin.com"},{nombre:"Google",url:"https://www.google.com"}]}/>
     </>
   )
 }

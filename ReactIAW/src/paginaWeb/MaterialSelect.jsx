@@ -18,7 +18,7 @@ export default function HeroSelect() {
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">Hero</InputLabel>
         <Select
-          labelId="demo-simple-select-label"
+          labelId="demo-simple-select-label"  /*Enlaza etiqueta con el componente (select)*/
           id="demo-simple-select"
           value={hero}
           label="Select Hero"
