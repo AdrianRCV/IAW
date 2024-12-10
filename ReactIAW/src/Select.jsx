@@ -9,7 +9,7 @@ import json2 from './heroes.json';
 export default function HeroSelect() {
   const [hero, setHero] = React.useState('');
 
-  const marvelHeroes = json2.filter(heroOption => heroOption.publisher.trim().toLowerCase() === "marvel comics");
+  const marvelHeroes = json2.filter(heroOption => heroOption.publisher.trim().toLowerCase() === "marvel comics");/*filtro para sacar datos del json*/ 
 
   const handleHeroChange = (event) => {
     setHero(event.target.value);

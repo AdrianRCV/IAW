@@ -89,6 +89,21 @@
 /******/ 		};
 /******/ 	})();
 /******/ 	
+<<<<<<< HEAD
+=======
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+>>>>>>> 851736377c73f4e0d618d1a1518fceb684421d63
 /******/ 	/* webpack/runtime/create fake namespace object */
 /******/ 	(() => {
 /******/ 		var getProto = Object.getPrototypeOf ? (obj) => (Object.getPrototypeOf(obj)) : (obj) => (obj.__proto__);
@@ -149,7 +164,11 @@
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
+<<<<<<< HEAD
 /******/ 			return undefined;
+=======
+/******/ 			return "static/chunks/" + chunkId + ".js";
+>>>>>>> 851736377c73f4e0d618d1a1518fceb684421d63
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -178,7 +197,11 @@
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
+<<<<<<< HEAD
 /******/ 		__webpack_require__.h = () => ("355b063784469479")
+=======
+/******/ 		__webpack_require__.h = () => ("091226c571def635")
+>>>>>>> 851736377c73f4e0d618d1a1518fceb684421d63
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

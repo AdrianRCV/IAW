@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // File: C:\Users\USER\Documents\IAW_Github(Adrian)\IAW\nextasir\app\layout.js
+=======
+// File: C:\Users\USUARIO\OneDrive\Escritorio\Repositorios\IAW\nextasir\app\layout.js
+>>>>>>> 851736377c73f4e0d618d1a1518fceb684421d63
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
