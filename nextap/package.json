@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "jsc": "^0.3.11",
+    "next": "^15.1.0",
+    "tsc": "^2.0.4"
+  },
+  "scripts": {
+    "dev": "next dev"
+  }
+}
